@@ -1,0 +1,279 @@
+:root {
+  /* StoreHub Brand Colors (for vibe coders) */
+  --storehub-orange: #FA8C16;        /* Primary actions, CTAs */
+  --storehub-orange-hover: #FFA940;  /* Hover states */
+  --storehub-blue: #1890FF;          /* Links, secondary actions */
+  --storehub-blue-hover: #40A9FF;    /* Link hover states */
+  
+  /* Background & Text Colors */
+  --storehub-bg-light: #F6F7FB;      /* Page background */
+  --storehub-bg-white: #FFFFFF;      /* Card/container background */
+  --storehub-text-dark: #1A1A1A;     /* Primary text */
+  --storehub-text-gray: #666666;     /* Secondary text */
+  --storehub-text-light: #999999;    /* Tertiary text */
+  
+  /* Data Visualization Colors (use sparingly) */
+  --data-positive: #52C41A;        /* Green - for very good data only */
+  --data-negative: #FF4D4F;        /* Red - for very bad data only */
+  
+  /* System Status Colors */
+  --storehub-success: #52C41A;     /* Form success, confirmations */
+  --storehub-error: #FF4D4F;       /* Form errors, alerts */
+  --storehub-warning: #FAAD14;     /* System warnings */
+  
+  /* Neutral Grays */
+  --storehub-gray-dark: #3D3D3D;     /* Dark elements */
+  --storehub-gray-medium: #808080;   /* Borders, dividers */
+  --storehub-gray-light: #E6E6E6;    /* Light borders */
+
+  /* StoreHub Spacing Scale (generous, clean feeling) */
+  --space-xs: 0.25rem;  /* 4px - tight spacing */
+  --space-sm: 0.5rem;   /* 8px - small gaps */
+  --space-md: 1rem;     /* 16px - standard spacing */
+  --space-lg: 1.5rem;   /* 24px - generous spacing */
+  --space-xl: 2rem;     /* 32px - section spacing */
+  --space-xxl: 3rem;    /* 48px - page spacing */
+
+  /* StoreHub Typography (friendly, readable) */
+  --storehub-font: 'Open Sans', Arial, Helvetica, sans-serif;
+  
+  /* Text Sizes (4 essential sizes) */
+  --text-xl: 1.75rem;    /* 28px - Main headings */
+  --text-lg: 1.25rem;    /* 20px - Sub headings */  
+  --text-base: 0.875rem; /* 14px - Body text */
+  --text-sm: 0.75rem;    /* 12px - Small text */
+  
+  /* Font Weights */
+  --font-normal: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Visual Effects */
+  --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --border-radius: 0.5rem;      /* 8px - standard rounded corners */
+  
+  /* Mobile-first breakpoints */
+  --mobile: 768px;
+  --tablet: 1024px;
+}
+
+/* StoreHub Base Styles */
+body {
+  margin: 0;
+  font-family: var(--storehub-font);
+  background-color: var(--storehub-bg-light);
+  color: var(--storehub-text-dark);
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+/* Essential Utility Classes for Vibe Coders */
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-md {
+  gap: var(--space-md);
+}
+
+.gap-lg {
+  gap: var(--space-lg);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Consistent Spacing Rules */
+.section-spacing {
+  margin-bottom: var(--space-lg);
+}
+
+.card-grid {
+  display: flex;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+/* Responsive card grid */
+@media (max-width: 768px) {
+  .card-grid {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}
+
+/* StoreHub Card Component */
+.card {
+  background-color: var(--storehub-bg-white);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.card-simple {
+  background-color: var(--storehub-bg-white);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-subtle);
+}
+
+/* StoreHub Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 6px;
+  font-family: var(--storehub-font);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--storehub-orange);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--storehub-orange-hover);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--storehub-text-gray);
+  border: 1px solid var(--storehub-gray-light);
+}
+
+.btn-secondary:hover {
+  background-color: var(--storehub-gray-light);
+  color: var(--storehub-text-dark);
+  border-color: var(--storehub-gray-medium);
+}
+
+/* Links (blue text only) */
+.link {
+  color: var(--storehub-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--storehub-blue-hover);
+  text-decoration: underline;
+}
+
+/* Typography Utilities */
+.text-xl {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--storehub-text-dark);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--storehub-text-dark);
+}
+
+.text-base {
+  font-size: var(--text-base);
+  color: var(--storehub-text-dark);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+  color: var(--storehub-text-gray);
+}
+
+.text-muted {
+  color: var(--storehub-text-light);
+}
+
+/* Spacing Utilities */
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+
+.m-sm { margin: var(--space-sm); }
+.m-md { margin: var(--space-md); }
+.m-lg { margin: var(--space-lg); }
+.m-xl { margin: var(--space-xl); }
+
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+
+/* Form Elements */
+.input {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--storehub-gray-light);
+  border-radius: var(--border-radius);
+  font-family: var(--storehub-font);
+  font-size: var(--text-base);
+  color: var(--storehub-text-dark);
+  background-color: var(--storehub-bg-white);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--storehub-orange);
+}
+
+/* Data Visualization (use sparingly) */
+.data-positive {
+  color: var(--data-positive);
+  font-weight: var(--font-semibold);
+}
+
+.data-negative {
+  color: var(--data-negative);
+  font-weight: var(--font-semibold);
+}
+
+.data-neutral {
+  color: var(--storehub-text-dark);
+  font-weight: var(--font-semibold);
+}
+
+/* StoreHub Logo */
+.storehub-logo {
+  height: auto;
+  max-width: 100px;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+  .storehub-logo {
+    max-width: 80px;
+  }
+} 
