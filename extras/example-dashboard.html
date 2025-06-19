@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Dashboard - StoreHub</title>
+  
+  <!-- StoreHub Favicons -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="flex flex-col gap-md">
+      
+      <!-- Header with logo and primary action -->
+      <header class="flex items-center justify-between section-spacing">
+        <img src="storehub-logo/StoreHub-lightbg.png" alt="StoreHub" class="storehub-logo">
+        <button class="btn btn-primary">Add New Product</button>
+      </header>
+      
+      <!-- Page Title -->
+      <h1 class="text-xl section-spacing">Sales Dashboard</h1>
+      
+      <!-- Metrics Cards Grid -->
+      <div class="card-grid">
+        <div class="card-simple flex-1">
+          <h3 class="text-lg mb-md">Total Sales</h3>
+          <p class="text-xl data-neutral">$24,580</p>
+          <p class="text-sm data-positive">+12% from last month</p>
+        </div>
+        
+        <div class="card-simple flex-1">
+          <h3 class="text-lg mb-md">Orders</h3>
+          <p class="text-xl data-neutral">156</p>
+          <p class="text-sm text-muted">+8% from last month</p>
+        </div>
+        
+        <div class="card-simple flex-1">
+          <h3 class="text-lg mb-md">Customers</h3>
+          <p class="text-xl data-neutral">89</p>
+          <p class="text-sm data-positive">+15% from last month</p>
+        </div>
+      </div>
+      
+      <!-- Main Content Area -->
+      <div class="card">
+        <div class="flex items-center justify-between mb-lg">
+          <h2 class="text-lg">Recent Orders</h2>
+          <div class="flex gap-md">
+            <button class="btn btn-secondary">Filter</button>
+            <button class="btn btn-secondary">Export</button>
+          </div>
+        </div>
+        
+        <!-- Simple table example -->
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--storehub-gray-light);">
+                <th style="text-align: left; padding: var(--space-sm) 0; color: var(--storehub-text-gray);" class="text-sm">Order ID</th>
+                <th style="text-align: left; padding: var(--space-sm) 0; color: var(--storehub-text-gray);" class="text-sm">Customer</th>
+                <th style="text-align: left; padding: var(--space-sm) 0; color: var(--storehub-text-gray);" class="text-sm">Amount</th>
+                <th style="text-align: left; padding: var(--space-sm) 0; color: var(--storehub-text-gray);" class="text-sm">Status</th>
+                <th style="text-align: left; padding: var(--space-sm) 0; color: var(--storehub-text-gray);" class="text-sm">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--storehub-gray-light);">
+                <td class="text-base" style="padding: var(--space-md) 0;">#SH-001</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">Sarah Johnson</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">$245.00</td>
+                <td style="padding: var(--space-md) 0;">
+                  <span style="background: var(--storehub-success); color: white; padding: var(--space-xs) var(--space-sm); border-radius: 6px; font-size: var(--text-sm);">Completed</span>
+                </td>
+                <td style="padding: var(--space-md) 0;">
+                  <button class="btn btn-secondary" style="padding: var(--space-xs) var(--space-sm); font-size: var(--text-sm);">View</button>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--storehub-gray-light);">
+                <td class="text-base" style="padding: var(--space-md) 0;">#SH-002</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">Mike Chen</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">$180.50</td>
+                <td style="padding: var(--space-md) 0;">
+                  <span style="background: var(--storehub-warning); color: white; padding: var(--space-xs) var(--space-sm); border-radius: 6px; font-size: var(--text-sm);">Pending</span>
+                </td>
+                <td style="padding: var(--space-md) 0;">
+                  <button class="btn btn-secondary" style="padding: var(--space-xs) var(--space-sm); font-size: var(--text-sm);">View</button>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--storehub-gray-light);">
+                <td class="text-base" style="padding: var(--space-md) 0;">#SH-003</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">Lisa Rodriguez</td>
+                <td class="text-base" style="padding: var(--space-md) 0;">$320.75</td>
+                <td style="padding: var(--space-md) 0;">
+                  <span style="background: var(--storehub-success); color: white; padding: var(--space-xs) var(--space-sm); border-radius: 6px; font-size: var(--text-sm);">Completed</span>
+                </td>
+                <td style="padding: var(--space-md) 0;">
+                  <button class="btn btn-secondary" style="padding: var(--space-xs) var(--space-sm); font-size: var(--text-sm);">View</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Secondary Actions -->
+      <div class="flex justify-between items-center mt-lg">
+        <p class="text-sm text-muted">Last updated: 2 minutes ago</p>
+        <div class="flex gap-md">
+          <a href="/settings" class="link">Settings</a>
+          <button class="btn btn-secondary">View All Orders</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html> 

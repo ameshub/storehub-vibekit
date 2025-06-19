@@ -49,8 +49,7 @@
   --font-bold: 700;
 
   /* Visual Effects */
-  --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.08);
   --border-radius: 0.5rem;      /* 8px - standard rounded corners */
   
   /* Mobile-first breakpoints */
@@ -132,13 +131,6 @@ body {
   box-shadow: var(--shadow-card);
 }
 
-.card-simple {
-  background-color: var(--storehub-bg-white);
-  border-radius: var(--border-radius);
-  padding: var(--space-md);
-  box-shadow: var(--shadow-subtle);
-}
-
 /* StoreHub Buttons */
 .btn {
   display: inline-flex;
@@ -167,15 +159,17 @@ body {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--storehub-bg-white);
   color: var(--storehub-text-gray);
   border: 1px solid var(--storehub-gray-light);
+  box-shadow: none;
 }
 
 .btn-secondary:hover {
-  background-color: var(--storehub-gray-light);
-  color: var(--storehub-text-dark);
-  border-color: var(--storehub-gray-medium);
+  background-color: var(--storehub-bg-white);
+  color: var(--storehub-orange-hover);
+  border-color: var(--storehub-orange-hover);
+  box-shadow: none;
 }
 
 /* Links (blue text only) */
