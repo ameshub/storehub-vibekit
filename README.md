@@ -1,38 +1,35 @@
 # StoreHub VibeKit 🎨
 *Copy-paste templates for building StoreHub-branded interfaces*
 
-## 🚀 Essential Files (Use These Daily)
+## What This Is
+A productivity toolkit that lets anyone at StoreHub tell Cursor "build me a dashboard" and get professionally branded results without design knowledge.
 
-### Core VibeKit Files:
-- **`team-quick-start-guide.md`** - 1-page guide to get started immediately
-- **`storehub-vibekit.md`** - Master templates and component guidelines
-- **`installation-setup.md`** - Setup instructions for new projects
+## 🚀 Quick Start
+1. **Download this repo** - Get all the files
+2. **Read `storehub-vibekit.md`** - Contains everything: setup, templates, examples
+3. **Start building** - Copy templates, paste into Cursor, done!
 
-### CSS & Assets:
-- **`styles.css`** - Production-ready StoreHub styles
-- **`tailwind.config.js`** - For teams using Tailwind CSS
-- **`favicon.ico, favicon-16x16.png, favicon-32x32.png`** - Favicon files
+## 📁 What's In Here
+
+### Essential Files:
+- **`storehub-vibekit.md`** - Master guide with templates and setup instructions
+- **`styles.css`** - Production-ready StoreHub CSS
+- **`tailwind.config.js`** - StoreHub design tokens for Tailwind projects
 - **`storehub-logo/`** - Logo files for light/dark backgrounds
+- **`favicon files`** - Branded favicons
 
-## 📁 Extras Folder
-*Reference materials and development files (optional)*
+### File Organization:
+Main directory = Files you use daily  
+*(test-project, extras, project-plan are development files, not in repo)*
 
-- **`project-plan.md`** - Original project planning document
-- **`vibekit-test-results.md`** - Development testing results
-- **`favicon-setup.md`** - Detailed favicon implementation guide
-- **`example-dashboard.html`** - Working example demonstration
+## 🎯 Success Metric
+You should go from "I need a customer form" → working StoreHub-branded result in under 10 minutes, regardless of your technical background.
 
-## 🎯 Quick Start for New Team Members
+## 📖 Full Documentation
+Everything you need is in **`storehub-vibekit.md`** - setup, templates, troubleshooting, examples.
 
-1. **Read** `team-quick-start-guide.md` (2 minutes)
-2. **Use** templates from `storehub-vibekit.md`
-3. **Setup** new projects with `installation-setup.md`
+## 🆘 Issues or Questions?
+Create an issue or ping the team. This should be simple to use!
 
-That's it! Everything else is reference material in the `extras/` folder.
-
-## 🏗️ File Organization Logic
-
-**Main folder** = Daily production files  
-**Extras folder** = Reference, examples, development docs
-
-This keeps the working directory clean and focused on what vibe coders actually need! 🎨✨ 
+---
+*Goal: Enable anyone at StoreHub to build cohesive, branded interfaces quickly* 🎨⚡

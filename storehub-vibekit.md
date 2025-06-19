@@ -1,303 +1,200 @@
 # StoreHub VibeKit 🎨
-*Copy-paste templates for building StoreHub-branded interfaces*
+*One document, copy-paste templates, instant StoreHub-branded results*
 
-## 🚀 Master Prompt Template
+## 🚀 Quick Setup (2 minutes)
+
+1. **Copy these files to your project:**
+   ```
+   your-project/
+   ├── src/styles.css              ← Copy this
+   ├── tailwind.config.js          ← Copy this (optional)
+   └── public/                     ← Copy these assets
+       ├── favicon.ico              (optional)
+       ├── favicon-16x16.png        (optional)
+       ├── favicon-32x32.png        (optional)
+       └── storehub-logo/
+           ├── StoreHub-lightbg.png 
+           └── StoreHub-darkbg.png
+   ```
+
+2. **Import the styles:**
+   ```javascript
+   // In your main CSS or component file
+   import './styles.css';
+   ```
+
+3. **Test it works:**
+   Ask Cursor: *"Create a test button with orange primary styling"*
+   ✅ Orange button = you're ready!
+
+---
+
+## 📋 Master Template (Copy This!)
 
 ```
 Build a [PAGE_TYPE] that feels like StoreHub using these rules:
 
-COLORS (use these exact CSS variables):
-- Primary buttons: var(--storehub-orange) 
-- Links: var(--storehub-blue)
-- Background: var(--storehub-bg-light)
-- Cards: var(--storehub-bg-white)
-- Main text: var(--storehub-text-dark)
-- Secondary text: var(--storehub-text-gray)
+COLORS:
+- Primary buttons: Orange (.btn-primary) - Save, Submit, Add New
+- Secondary buttons: Gray outline (.btn-secondary) - Cancel, Filter, Edit  
+- Links: Blue text (.link) - navigation, "Learn more" 
+- Cards: White with shadow (.card)
+- NEVER use blue buttons or orange/blue for data
 
-DATA COLORS (use sparingly and with care):
-- Very good data: var(--data-positive) or class="data-positive" (Green)
-- Very bad data: var(--data-negative) or class="data-negative" (Red)  
-- Neutral data: class="data-neutral" (Dark gray)
-- NEVER use orange or blue for data - this causes UI confusion
-
-SPACING (generous and clean):
-- Container padding: p-lg or p-xl
-- Section spacing: Use .section-spacing class for consistent vertical spacing
-- Card grids: Use .card-grid class for consistent horizontal/vertical spacing
-- Card padding: p-lg for important content, p-md for simple cards
-- Don't cram content - use breathing room
-- Rule: Horizontal and vertical spacing should ALWAYS match
+SPACING:
+- Use .section-spacing for vertical spacing between sections
+- Use .card-grid for consistent card layouts
+- Use generous padding - don't cram content
 
 TYPOGRAPHY:
-- Page headings: class="text-xl" (28px, semibold)
-- Section headings: class="text-lg" (20px, semibold)
-- Body text: class="text-base" (14px, normal)
-- Small text: class="text-sm" for secondary info
+- Page headings: .text-xl (large, semibold)
+- Section headings: .text-lg (medium, semibold)  
+- Body text: .text-base (normal size)
+- Small text: .text-sm for secondary info
 
-COMPONENTS:
-- Buttons: Use .btn-primary (orange) or .btn-secondary (light gray outline)
-- Links: Use .link class for blue text links (never blue buttons)
-- Cards: Use .card for main content, .card-simple for less important content
-- Forms: Use .input class for form fields
-- Layout: Use .container for page width, .flex and .gap-md for layouts
-- Logo: Use StoreHub-lightbg.png on light backgrounds, StoreHub-darkbg.png on dark backgrounds
+LAYOUT:
+- Use .container for page width
+- Include StoreHub logo in header (.storehub-logo)
+- Use .card for grouped content
+- Make it mobile-friendly
 
-BUTTON RULES (Simple & Clear):
-- Primary actions: Orange buttons (.btn-primary) - Save, Submit, Add New
-- Secondary actions: Light gray outline buttons (.btn-secondary) - Cancel, Filter, Edit
-- Links only: Blue text (.link) - navigation, "Learn more", external links
-- NEVER use blue buttons - blue is for links only
-
-BRANDING:
-- Always include StoreHub logo in headers using class="storehub-logo"
-- Include favicon setup in your framework
-- Choose correct logo version based on background color
-
-PERSONALITY (Professional but Approachable):
+PERSONALITY:
+- Professional but approachable
 - Clean, uncluttered layout
-- Generous spacing - users need breathing room
-- Make primary actions obvious with orange buttons
-- Use gray for secondary actions and links
+- Make primary actions obvious with orange
 - Trustworthy for small business owners
 
 SPECIFIC REQUIREMENTS:
-[USER FILLS THIS IN]
+[FILL IN YOUR DETAILS HERE]
 
-Use your framework (React, Vue, Angular, etc.) and the CSS classes from styles.css. Make it mobile-friendly.
+Use your framework and make it responsive.
 ```
 
-## 🎨 Logo & Favicon Usage
+---
 
-### StoreHub Logo Setup
-```javascript
-// Logo component example (adapt to your framework)
-const StoreHubLogo = ({ isDarkBackground = false, className = "" }) => {
-  const logoSrc = isDarkBackground 
-    ? "/storehub-logo/StoreHub-darkbg.png"
-    : "/storehub-logo/StoreHub-lightbg.png";
-    
-  return (
-    <img 
-      src={logoSrc} 
-      alt="StoreHub" 
-      className={`storehub-logo ${className}`}
-    />
-  );
-};
+## 🎯 Quick Templates (Ready to Use)
+
+### Dashboard
+```
+Build a sales dashboard with metric cards showing revenue, orders, and customers. Include a data table and an orange "Add Product" button in the header.
 ```
 
-### Logo Sizing Guidelines
-- **Header/Navigation**: 100px width (default)
-- **Footer**: 80px width  
-- **Small contexts**: 60px width minimum
-- **Always maintain aspect ratio** - never stretch or squash
-
-### Logo CSS Class
-```css
-.storehub-logo {
-  height: auto;
-  max-width: 100px; /* Good for most contexts */
-}
-
-/* Responsive logo sizing */
-@media (max-width: 768px) {
-  .storehub-logo {
-    max-width: 80px;
-  }
-}
+### Form Page  
+```
+Build a customer form with input fields for name, email, phone, and company. Include orange "Save Customer" and gray "Cancel" buttons.
 ```
 
-### Favicon Setup
-Add to your framework's HTML head section or meta configuration:
-```javascript
-// React (in public/index.html or Next.js _app.js)
-// Vue (in public/index.html or Nuxt config)
-// Angular (in src/index.html)
-
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+### Settings Page
 ```
-
-### Required Files Structure
-```
-your-project/
-├── public/ (or static/ or assets/)
-│   ├── favicon.ico
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   └── storehub-logo/
-│       ├── StoreHub-lightbg.png
-│       └── StoreHub-darkbg.png
-├── src/
-│   └── styles.css (or import into your CSS)
-```
-
-### Logo Usage Rules
-- **Light bg version**: Use on white, light gray, or light colored backgrounds
-- **Dark bg version**: Use on dark gray, orange, blue, or colored backgrounds  
-- **Minimum clear space**: Equal to the height of the "S" in StoreHub around the logo
-- **Never**: Rotate, skew, or apply effects to the logo
-- **Always**: Keep readable and maintain sufficient contrast
-
-## 📋 Quick Component Guide
-
-### Button Components
-```javascript
-// Primary action (orange)
-<button className="btn btn-primary">Save Changes</button>
-
-// Secondary action (light gray outline)
-<button className="btn btn-secondary">Cancel</button>
-```
-
-### Link Components (Blue Text Only)
-```javascript
-// For navigation and external links
-<a href="/help" className="link">Learn more</a>
-<a href="#details" className="link">View details</a>
-```
-
-### Data Display Components (Use Sparingly)
-```javascript
-// Very good performance
-<span className="data-positive">+15%</span>
-
-// Very bad performance  
-<span className="data-negative">-8%</span>
-
-// Neutral data
-<span className="data-neutral">$24,580</span>
-
-// DON'T use orange or blue for data
-// ❌ WRONG: <span style={{color: 'var(--storehub-orange)'}}>$24,580</span>
-```
-
-### Card Components
-```javascript
-<div className="card">
-  <h2 className="text-lg mb-md">Important Content</h2>
-  <p className="text-base">Main content goes here...</p>
-</div>
-
-<div className="card-simple">
-  <p className="text-sm text-muted">Less important info</p>
-</div>
-```
-
-### Layout Structure
-```javascript
-<div className="container">
-  <div className="flex flex-col">
-    {/* Header with logo */}
-    <header className="flex items-center justify-between section-spacing">
-      <StoreHubLogo />
-      <button className="btn btn-primary">Main Action</button>
-    </header>
-    
-    <h1 className="text-xl section-spacing">Page Title</h1>
-    
-    {/* Card grid with consistent spacing */}
-    <div className="card-grid">
-      <div className="card flex-1">Content</div>
-      <div className="card flex-1">Content</div>
-    </div>
-  </div>
-</div>
-```
-
-### Spacing Utilities
-```javascript
-{/* For major page sections */}
-<section className="section-spacing">...</section>
-
-{/* For card grids (auto-consistent spacing) */}
-<div className="card-grid">
-  <div className="card flex-1">Card 1</div>
-  <div className="card flex-1">Card 2</div>
-</div>
-
-{/* For flex layouts */}
-<div className="flex gap-lg">...</div>
-```
-
-### Form Components
-```javascript
-<input type="text" className="input mb-md" placeholder="Enter name" />
-<button className="btn btn-primary">Submit</button>
-```
-
-## 🎯 Page-Specific Templates
-
-### Dashboard Page
-```
-Build a dashboard page that feels like StoreHub with these sections:
-- Header with page title (text-xl) and primary action button (btn-primary)
-- Grid of 3-4 metric cards using .card-grid and .card-simple
-- Main content area with .card containing a table or chart
-- Use .section-spacing for vertical spacing, .card-grid for card layouts
-- Orange primary button for main action, gray buttons (btn-secondary) for filters
-- Buttons should use regular font-weight, not bold
-```
-
-### Form Page
-```
-Build a form page that feels like StoreHub:
-- Clean header with form title (text-xl)
-- Single .card containing the form
-- Use .input class for all form fields
-- Group related fields with mb-md spacing
-- Primary submit button (btn-primary) on the right
-- Cancel button (btn-secondary) or link (class="link") on the left
+Build a settings page with sections for account info, notifications, and billing. Include toggle switches and orange "Save Changes" button.
 ```
 
 ### List/Table Page
 ```
-Build a list page that feels like StoreHub:
-- Header with title (text-xl) and "Add New" button (btn-primary)
-- Search/filter bar in a .card-simple with gray buttons (btn-secondary)
-- Main table/list in a .card with generous padding
-- Action buttons using btn-secondary for table row actions
-- Use mb-lg spacing between sections
+Build a product list with search, filters, and a data table. Include orange "Add Product" button and gray "Export" button.
 ```
 
-## ⚠️ StoreHub Don'ts
+---
 
-- **Don't** use blue buttons - blue is for links only, not buttons
-- **Don't** use orange or blue for data display - causes UI confusion
-- **Don't** overuse green/red - reserve for very good/very bad data only
-- **Don't** mix horizontal/vertical spacing - use .card-grid and .section-spacing
-- **Don't** use semibold font-weight on buttons - keep them regular weight
-- **Don't** create button confusion - stick to orange primary + gray secondary
-- **Don't** use bright, flashy colors
-- **Don't** cram content together - always use generous spacing
-- **Don't** make actions unclear - orange = primary action
-- **Don't** use tiny text - maintain readability
-- **Don't** ignore mobile - make it responsive
+## 🎨 What You Can Ask For
 
-## 🎨 Color Psychology
+### Buttons
+- **"Orange Save button"** or **"primary button"** → Gets you the main action button
+- **"Gray Cancel button"** or **"secondary button"** → Gets you secondary actions  
+- **"Blue Learn more link"** → Gets you navigation/external links
 
-- **Orange** = Empowerment, main actions, confidence (buttons only)
-- **Blue** = Trust, reliability (links only, never data)  
-- **Gray** = Professional, supportive, informational (secondary buttons, neutral data)
-- **Green** = Very good performance (use sparingly for data)
-- **Red** = Very bad performance (use sparingly for data)
-- **White space** = Breathing room, clarity, professionalism
+### Cards & Layout
+- **"Put it in a card"** → Groups content with white background and shadow
+- **"Use card grid layout"** → Automatically spaces multiple cards
+- **"Add section spacing"** → Proper vertical spacing between page sections
+- **"Container layout"** → Proper page width and responsive design
 
-### Data Color Rules:
-- **Neutral data** (sales figures, counts): Dark gray
-- **Very good trends** (+15% growth): Green
-- **Very bad trends** (-10% decline): Red
-- **Everything else**: Stay neutral gray
+### Logo
+- **"Include StoreHub logo in header"** → Automatically uses correct logo version
+- **"StoreHub logo on light background"** → Uses light background version
+- **"StoreHub logo on dark background"** → Uses dark background version
 
-## 🚀 Success Checklist
+### Data Colors (Use Sparingly)
+- **"Show positive growth in green"** → For very good performance (+15%)
+- **"Show decline in red"** → For very bad performance (-8%)  
+- **"Display revenue in neutral gray"** → For normal data display
 
-Your interface feels "StoreHub" if:
-- [ ] Orange buttons stand out for primary actions
-- [ ] Content has generous padding and spacing
-- [ ] Text hierarchy is clear (xl → lg → base → sm)
-- [ ] Cards group related content clearly
-- [ ] It looks professional but not intimidating
-- [ ] Small business owners would feel confident using it
+---
 
-Ready to vibecode! Copy the master template and fill in your specific requirements. 🎨✨ 
+## ✅ Success Checklist
+
+Your result feels "StoreHub" if:
+- [ ] Orange buttons for main actions (Save, Submit, Add)
+- [ ] Gray buttons for secondary actions (Cancel, Filter)
+- [ ] Blue text for links (never blue buttons!)
+- [ ] StoreHub logo in header
+- [ ] Generous spacing, not cramped
+- [ ] Clear text hierarchy (big → medium → small)
+- [ ] White cards with subtle shadows
+
+---
+
+## 🚨 Common Mistakes to Avoid
+
+- **Don't** use blue buttons (blue = links only)
+- **Don't** use orange/blue for data values (causes confusion)
+- **Don't** make text bold everywhere (keep normal font-weight)
+- **Don't** cram content together (use .section-spacing)
+- **Don't** mix up logo versions (light bg vs dark bg)
+
+---
+
+## 💡 Real Examples
+
+### Good Dashboard Prompt:
+```
+Build a sales dashboard with:
+- Header with StoreHub logo and orange "Add Product" button
+- 4 metric cards showing revenue, orders, customers, conversion rate
+- Data table with product list and gray "Export" button
+- Use green for positive metrics, red for negative ones
+```
+
+### Good Form Prompt:
+```
+Build a new customer form with:
+- Input fields for name, email, phone, company, notes
+- Orange "Save Customer" and gray "Cancel" buttons
+- Validation messages in red
+- StoreHub logo in header
+```
+
+---
+
+## 🆘 Troubleshooting
+
+**Orange button not showing?**
+- Check if styles.css is imported
+- Verify .btn-primary class is applied
+- Look for console errors in browser dev tools
+
+**Logo not displaying?**
+- Check file path: `/storehub-logo/StoreHub-lightbg.png`
+- Verify files are in public/static directory
+- Try loading image URL directly in browser
+
+**Spacing looks wrong?**
+- Use .section-spacing for vertical spacing
+- Use .card-grid for card layouts
+- Don't mix custom spacing with our classes
+
+**Need help?**
+- Results don't look "StoreHub enough"
+- Custom components not covered here
+- Integration issues with your framework
+
+---
+
+## 🎯 You're Ready!
+
+1. **Copy the master template** above
+2. **Fill in [PAGE_TYPE] and requirements**
+3. **Paste into Cursor and hit enter**
+4. **Get StoreHub-branded results!**
+
+The whole point is speed and consistency - you should be building, not wrestling with design decisions! 🚀✨ 
