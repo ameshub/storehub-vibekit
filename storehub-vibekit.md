@@ -1,5 +1,5 @@
 # StoreHub VibeKit 🎨
-*One document, copy-paste templates, instant StoreHub-branded results*
+*Fill-in-the-blanks templates for instant StoreHub-branded results*
 
 ## 🚀 Quick Setup (2 minutes)
 
@@ -29,172 +29,173 @@
 
 ---
 
-## 📋 Master Template (Copy This!)
+## 📋 Universal Prompt Template
+
+**Every prompt should include these elements:**
 
 ```
-Build a [PAGE_TYPE] that feels like StoreHub using these rules:
+Build a [WHAT YOU'RE BUILDING] using the stylesheet and vibekit provided.
 
-COLORS:
-- Primary buttons: Orange (.btn-primary) - Save, Submit, Add New
-- Secondary buttons: Gray outline (.btn-secondary) - Cancel, Filter, Edit  
-- Links: Blue text (.link) - navigation, "Learn more" 
-- Cards: White with shadow (.card)
-- NEVER use blue buttons or orange/blue for data
+TARGET AUDIENCE: [WHO WILL USE THIS]
+GOAL: Ensure [TARGET AUDIENCE] can [WHAT THEY NEED TO ACCOMPLISH]
 
-SPACING:
-- Use .section-spacing for vertical spacing between sections
-- Use .card-grid for consistent card layouts
-- Use generous padding - don't cram content
-
-TYPOGRAPHY:
-- Page headings: .text-xl (large, semibold)
-- Section headings: .text-lg (medium, semibold)  
-- Body text: .text-base (normal size)
-- Small text: .text-sm for secondary info
-
-LAYOUT:
-- Use .container for page width
-- Include StoreHub logo in header (.storehub-logo)
-- Use .card for grouped content
-- Make it mobile-friendly
-
-PERSONALITY:
-- Professional but approachable
-- Clean, uncluttered layout
-- Make primary actions obvious with orange
+STOREHUB BRAND PERSONALITY:
+- Professional but approachable 
 - Trustworthy for small business owners
+- Clean, uncluttered layout
+- Orange = primary actions, Gray = secondary actions, Blue = links only
 
 SPECIFIC REQUIREMENTS:
-[FILL IN YOUR DETAILS HERE]
+[YOUR CUSTOM DETAILS HERE]
 
-Use your framework and make it responsive.
+Make it mobile-friendly and use StoreHub logo in header.
 ```
 
 ---
 
-## 🎯 Quick Templates (Ready to Use)
+## 🎯 Fill-in-the-Blanks Examples
 
-### Dashboard
+### Example 1: Restaurant Owner
 ```
-Build a sales dashboard with metric cards showing revenue, orders, and customers. Include a data table and an orange "Add Product" button in the header.
+Build a daily sales tracker using the stylesheet and vibekit provided.
+
+TARGET AUDIENCE: Restaurant owners checking end-of-day performance
+GOAL: Ensure restaurant owners can quickly see if they hit their daily targets
+
+STOREHUB BRAND PERSONALITY:
+- Professional but approachable 
+- Trustworthy for small business owners
+- Clean, uncluttered layout
+- Orange = primary actions, Gray = secondary actions, Blue = links only
+
+SPECIFIC REQUIREMENTS:
+- Show today's revenue, orders, average order value
+- Compare to yesterday and last week
+- Big orange "Close Day" button
+- List of top-selling items
+
+Make it mobile-friendly and use StoreHub logo in header.
 ```
 
-### Form Page  
+### Example 2: Retail Store Manager
 ```
-Build a customer form with input fields for name, email, phone, and company. Include orange "Save Customer" and gray "Cancel" buttons.
+Build an inventory alert dashboard using the stylesheet and vibekit provided.
+
+TARGET AUDIENCE: Retail managers who need to restock quickly
+GOAL: Ensure managers can spot low inventory before running out of stock
+
+STOREHUB BRAND PERSONALITY:
+- Professional but approachable 
+- Trustworthy for small business owners
+- Clean, uncluttered layout
+- Orange = primary actions, Gray = secondary actions, Blue = links only
+
+SPECIFIC REQUIREMENTS:
+- Show items below restock threshold
+- Sort by urgency (critical, low, medium)
+- Orange "Reorder" buttons for each item
+- Quick search to find specific products
+
+Make it mobile-friendly and use StoreHub logo in header.
 ```
 
-### Settings Page
+### Example 3: Service Business Owner
 ```
-Build a settings page with sections for account info, notifications, and billing. Include toggle switches and orange "Save Changes" button.
-```
+Build a customer appointment scheduler using the stylesheet and vibekit provided.
 
-### List/Table Page
-```
-Build a product list with search, filters, and a data table. Include orange "Add Product" button and gray "Export" button.
+TARGET AUDIENCE: Service business owners (salon, clinic, repair shop) managing bookings
+GOAL: Ensure business owners can quickly schedule and manage customer appointments
+
+STOREHUB BRAND PERSONALITY:
+- Professional but approachable 
+- Trustworthy for small business owners
+- Clean, uncluttered layout
+- Orange = primary actions, Gray = secondary actions, Blue = links only
+
+SPECIFIC REQUIREMENTS:
+- Calendar view with time slots
+- Customer contact info and service type
+- Orange "Book Appointment" and "Confirm" buttons
+- Gray "Reschedule" and "Cancel" options
+
+Make it mobile-friendly and use StoreHub logo in header.
 ```
 
 ---
 
-## 🎨 What You Can Ask For
+## 🎨 StoreHub Brand Guidelines
 
-### Buttons
-- **"Orange Save button"** or **"primary button"** → Gets you the main action button
-- **"Gray Cancel button"** or **"secondary button"** → Gets you secondary actions  
-- **"Blue Learn more link"** → Gets you navigation/external links
+### Colors (Always Follow These)
+- **Orange buttons** → Primary actions (Save, Add, Submit, Confirm)
+- **Gray buttons** → Secondary actions (Cancel, Edit, Filter, Export)  
+- **Blue text** → Links and navigation (NEVER blue buttons)
+- **White cards** → Content grouping with subtle shadows
+- **Green/Red** → Only for data that's clearly positive/negative
 
-### Cards & Layout
-- **"Put it in a card"** → Groups content with white background and shadow
-- **"Use card grid layout"** → Automatically spaces multiple cards
-- **"Add section spacing"** → Proper vertical spacing between page sections
-- **"Container layout"** → Proper page width and responsive design
+### Spacing & Layout
+- **Generous padding** → Don't cram content together
+- **Clear hierarchy** → Big headings → medium headings → body text
+- **StoreHub logo** → Always in header
+- **Mobile-first** → Works on phones and tablets
 
-### Logo
-- **"Include StoreHub logo in header"** → Automatically uses correct logo version
-- **"StoreHub logo on light background"** → Uses light background version
-- **"StoreHub logo on dark background"** → Uses dark background version
-
-### Data Colors (Use Sparingly)
-- **"Show positive growth in green"** → For very good performance (+15%)
-- **"Show decline in red"** → For very bad performance (-8%)  
-- **"Display revenue in neutral gray"** → For normal data display
+### Personality Reminders
+- **Professional but approachable** → Serious enough for business, friendly enough for daily use
+- **Trustworthy** → People are running their livelihoods on this
+- **Uncluttered** → Small business owners are busy, don't overwhelm them
 
 ---
 
 ## ✅ Success Checklist
 
 Your result feels "StoreHub" if:
-- [ ] Orange buttons for main actions (Save, Submit, Add)
-- [ ] Gray buttons for secondary actions (Cancel, Filter)
+- [ ] Orange buttons for main actions 
+- [ ] Gray buttons for secondary actions
 - [ ] Blue text for links (never blue buttons!)
 - [ ] StoreHub logo in header
 - [ ] Generous spacing, not cramped
-- [ ] Clear text hierarchy (big → medium → small)
-- [ ] White cards with subtle shadows
+- [ ] Makes sense for a small business owner to use
+- [ ] Mobile-friendly layout
 
 ---
 
-## 🚨 Common Mistakes to Avoid
+## 🚨 Red Flags to Avoid
 
-- **Don't** use blue buttons (blue = links only)
-- **Don't** use orange/blue for data values (causes confusion)
-- **Don't** make text bold everywhere (keep normal font-weight)
-- **Don't** cram content together (use .section-spacing)
-- **Don't** mix up logo versions (light bg vs dark bg)
-
----
-
-## 💡 Real Examples
-
-### Good Dashboard Prompt:
-```
-Build a sales dashboard with:
-- Header with StoreHub logo and orange "Add Product" button
-- 4 metric cards showing revenue, orders, customers, conversion rate
-- Data table with product list and gray "Export" button
-- Use green for positive metrics, red for negative ones
-```
-
-### Good Form Prompt:
-```
-Build a new customer form with:
-- Input fields for name, email, phone, company, notes
-- Orange "Save Customer" and gray "Cancel" buttons
-- Validation messages in red
-- StoreHub logo in header
-```
+- **Blue buttons** → Confusing (blue = links only)
+- **Orange/blue for data** → Causes brand confusion  
+- **Cramped layout** → Small business owners need breathing room
+- **Too many bold fonts** → Overwhelming and unprofessional
+- **Complex navigation** → Keep it simple for busy users
 
 ---
 
 ## 🆘 Troubleshooting
 
-**Orange button not showing?**
-- Check if styles.css is imported
-- Verify .btn-primary class is applied
-- Look for console errors in browser dev tools
+**Orange buttons not showing?**
+- Check if styles.css is imported correctly
+- Verify you're using the right CSS classes
 
 **Logo not displaying?**
 - Check file path: `/storehub-logo/StoreHub-lightbg.png`
-- Verify files are in public/static directory
-- Try loading image URL directly in browser
+- Make sure logo files are in your public directory
 
-**Spacing looks wrong?**
-- Use .section-spacing for vertical spacing
-- Use .card-grid for card layouts
-- Don't mix custom spacing with our classes
+**Doesn't feel "StoreHub enough"?**
+- Use the Universal Prompt Template above
+- Focus on your target audience's actual needs
+- Remember: professional but approachable
 
-**Need help?**
-- Results don't look "StoreHub enough"
-- Custom components not covered here
-- Integration issues with your framework
+**Need more examples?**
+Think about your specific use case:
+- Who will use this? (restaurant owner, shop manager, service provider)
+- What do they need to accomplish? (check sales, manage inventory, schedule appointments)
+- When will they use it? (end of day, during busy periods, planning ahead)
 
 ---
 
 ## 🎯 You're Ready!
 
-1. **Copy the master template** above
-2. **Fill in [PAGE_TYPE] and requirements**
-3. **Paste into Cursor and hit enter**
-4. **Get StoreHub-branded results!**
+1. **Copy the Universal Prompt Template**
+2. **Fill in your specific details**
+3. **Paste into Cursor**
+4. **Get StoreHub-branded results that actually work for your users!**
 
-The whole point is speed and consistency - you should be building, not wrestling with design decisions! 🚀✨ 
+Remember: You're building for real small business owners who depend on these tools. Make it trustworthy, approachable, and useful! 🚀✨
