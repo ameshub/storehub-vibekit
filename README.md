@@ -16,7 +16,7 @@ A productivity toolkit that lets anyone at StoreHub tell Cursor "build me a dash
 - **`styles.css`** - Production-ready StoreHub CSS
 - **`tailwind.config.js`** - StoreHub design tokens for Tailwind projects
 - **`storehub-logo/`** - Logo files for light/dark backgrounds
-- **`favicon files`** - Branded favicons
+- **`favicon files`** - OPTIONAL Branded favicons
 
 ### File Organization:
 Main directory = Files you use daily  
